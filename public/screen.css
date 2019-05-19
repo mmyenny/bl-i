@@ -25,6 +25,10 @@ p {
   margin: 0;
 }
 
+ul {
+  padding: 0 0 0 20px;
+}
+
 li {
   list-style: none;
 }
@@ -44,6 +48,15 @@ header p {
 i.fa-bars {
   padding-right: 5px;
   font-size: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 50vw;
+  background-color: white;
+  padding: 10px;
 }
 
 .centerText {

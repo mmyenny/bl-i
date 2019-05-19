@@ -11,8 +11,12 @@
   <body>
     <header>
       <p>BLULEADZ</p>
-      <i class="fas fa-bars"></i>
-      <nav>
+      <i id="hamburgerMenuIcon" class="fas fa-bars"></i>
+      <nav id="hamburgerMenu" class="hide">
+        <div id="closeHamburgerMenu"  class="row">
+          <i class="fas fa-times hide"></i>
+          <p>Close</p>
+        </div>
         <div class="row">
           <i class="fas fa-magnet"></i>
           <p>Marketing</p>
@@ -66,14 +70,14 @@
     <p class="centerText">With All Your Inbound Needs</p>
     <section class="formSection">
       <h2>Get in Touch to See How We Can Help You Grow</h2>
-      <form>
+      <div>
         <div class="inputOption">
           <label>First Name:</label>
-          <input placeholder="First Name"></input>
+          <input id="firstName" placeholder="First Name" type="text"></input>
         </div>
         <div class="inputOption">
           <label>Last Name:</label>
-          <input placeholder="Last Name"></input>
+          <input id="lastName" placeholder="Last Name" type="text"></input>
         </div>
         <div class="inputOption">
           <label>Company Name:</label>
@@ -96,9 +100,9 @@
           </select>
         </div>
         <div class="centering">
-          <button>Submit</button>
+          <button id="submitForm">Submit</button>
         </div>
-      </form>
+      </div>
     </section>
     <section class="centering container">
       <img class="map" src="./assets/map.png" alt="Map"/>
@@ -167,7 +171,10 @@
     </section>
     <section class="container centerText">
       <h5>ARE YOU LOST?</h5>
-      <input placeholder="Search"/>
+      <input id="searchInput" placeholder="Search" type="text"/>
+      <button id="search">
+        <i class="fas fa-search"></i>
+      </button>
       <div class="areYouLostContact"> 
         <i class="fas fa-phone"></i>
         <p>	(866) 995-8720</p>

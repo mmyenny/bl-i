@@ -1,6 +1,28 @@
+let hamburgerMenu = false
 let dropDownOne = false
 let dropDownTwo = false
 let dropDownThree = false
+
+const toggleHamburgerMenu = () => {
+  hamburgerMenu = !hamburgerMenu
+  let element = document.querySelector('#hamburgerMenu')
+
+  _dropDown(hamburgerMenu, element)
+}
+
+const _submitForm = () => {
+  let firstName = document.querySelector('#firstName').value
+  let lastName = document.querySelector('#lastName').value
+
+  //created single form object
+  let form = {
+    firstName: firstName,
+    lastName: lastName
+  }
+
+  console.log(form)
+  //api call would pass in my form to the api
+}
 
 const toggleDropDownOne = () => {
   dropDownOne = !dropDownOne
@@ -31,6 +53,13 @@ const _dropDown = (bool, element) => {
   }
 }
 
+const _submitSearch = () => {
+  let search = document.querySelector('#searchInput').value
+  // window.location(`/search/${search}`)
+  //how to navigate it JS
+  console.log(search)
+}
+
 const main = () => {
   document
     .querySelector('#dropDownOneIcon')
@@ -41,6 +70,14 @@ const main = () => {
   document
     .querySelector('#dropDownThreeIcon')
     .addEventListener('click', toggleDropDownThree)
+  document
+    .querySelector('#hamburgerMenuIcon')
+    .addEventListener('click', toggleHamburgerMenu)
+  document
+    .querySelector('#closeHamburgerMenu')
+    .addEventListener('click', toggleHamburgerMenu)
+  document.querySelector('#submitForm').addEventListener('click', _submitForm)
+  document.querySelector('#search').addEventListener('click', _submitSearch)
 }
 
 document.addEventListener('DOMContentLoaded', main)
