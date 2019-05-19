@@ -11,6 +11,10 @@ body {
   min-height: 100%;
 }
 
+.hide {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -19,6 +23,10 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 header {
@@ -47,6 +55,10 @@ i.fa-bars {
   justify-content: center;
 }
 
+.row {
+  display: flex;
+}
+
 section.formSection {
   display: flex;
   flex-direction: column;
@@ -73,10 +85,15 @@ img.map,
 img.blogging,
 img.team {
   width: 100%;
+  border-radius: 5px;
 }
 
 .textAlignRight {
   text-align: right;
+}
+
+h4 {
+  margin: 20px 0 10px 0;
 }
 
 .areYouLostContact {

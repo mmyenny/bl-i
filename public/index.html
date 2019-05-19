@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bli</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BLI</title>
+    <link rel="stylesheet" href="/screen.css" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   </head>
+ 
   <body>
     <header>
       <p>BLULEADZ</p>
       <i class="fas fa-bars"></i>
+      <nav>
+        <div class="row">
+          <i class="fas fa-magnet"></i>
+          <p>Marketing</p>
+        </div>
+          <ul>
+            <li>Design</li>
+            <li>Design Porfolio</li>
+          </ul>
+        <div class="row">
+          <i class="fas fa-rocket"></i>
+          <p>Sales</p>
+        </div>
+        <div class="row">
+          <i class="fas fa-bell"></i>
+          <p>Services</p>
+        </div>
+        <div class="row">
+          <i class="fas fa-credit-card"></i>
+          <p>Pricing</p>
+        </div>
+        <div class="row">
+          <i class="fas fa-book"></i>
+          <p>Resources</p>
+        </div>
+          <ul>
+            <li>Guides</li>
+            <li>The Inbound Glossary</li>
+          </ul>
+        <div class="row">
+          <i class="fas fa-rss"></i>
+          <p>Blog</p>
+        </div>
+        <div class="row">
+          <i class="fas fa-users"></i>
+          <p>About</p>
+        </div>
+          <ul>
+            <li>Testimonials</li>
+          </ul>
+        <div class="row">
+          <i class="far fa-map"></i>
+          <p>Contact</p>
+        </div>
+          <ul>
+            <li>Write For Us</li>
+            <li>Apply</li>
+          </ul>
+      </nav>
     </header>
     <h1 class="centerText">Contact Us</h1>
     <p class="centerText">With All Your Inbound Needs</p>
@@ -57,11 +106,11 @@
         <h4 class="centerText">Get in Touch</h4>
         <div class="inputOption">
           <h5>Office:</h5>
-          <p class="textAlignRight">	3030 N. Rocky Point Dr. W. <br/> Suite 600 <br/> Tampa, Florida 33607</p>
+          <p class="textAlignRight">3030 N. Rocky Point Dr. W. <br/> Suite 600 <br/> Tampa, Florida 33607</p>
         </div>
         <div class="inputOption">
           <h5>Phone:</h5>
-          <p class="textAlignRight">	(866) 995-8720</p>
+          <p class="textAlignRight">(866) 995-8720</p>
         </div>
         <div class="inputOption">
           <h5>Email:</h5>
@@ -69,7 +118,7 @@
         </div>
       </div>
     </section>
-    <section class="container">
+    <section class="centerText container">
       <div>
         <img class="blogging" src="./assets/blogging.png" alt="Blogging"/>
         <div>
@@ -88,8 +137,8 @@
     <section class="centerText">
       <div>
         <h5>SERVICES</h5>
-        <i class="fas fa-angle-double-down"></i>
-        <div>
+        <i id="dropDownOneIcon" class="fas fa-angle-double-down"></i>
+        <div id="dropDownOne" class="hide">
           <p>MARKETING</p>
           <p>DESIGN</p>
           <p>SALES</p>
@@ -98,8 +147,8 @@
       </div>
       <div>
         <h5>COMPANY</h5>
-        <i class="fas fa-angle-double-down"></i>
-        <div>
+        <i id="dropDownTwoIcon" class="fas fa-angle-double-down"></i>
+        <div id="dropDownTwo" class="hide">
           <p>ABOUT US</p>
           <p>CUSTOMER TESTIMONIALS</p>
           <p>CAREERS</p>
@@ -108,8 +157,8 @@
       </div>
       <div>
         <h5>RESOURCES</h5>
-        <i class="fas fa-angle-double-down"></i>
-        <div>
+        <i id="dropDownThreeIcon" class="fas fa-angle-double-down"></i>
+        <div id="dropDownThree" class="hide">
           <p>BLOG</p>
           <p>RESOURCES</p>
           <p>THE INBOUND GLOSSARY</p>
@@ -136,5 +185,6 @@
         <i class="fab fa-facebook-messenger"></i>
       </div>
     </section>
+    <script src="/main.js" charset="UTF-8"></script>
   </body>
 </html>
