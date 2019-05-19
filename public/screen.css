@@ -11,8 +11,75 @@ body {
   min-height: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header p {
+  padding-left: 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+i.fa-bars {
+  padding-right: 5px;
+  font-size: 20px;
+}
+
+.centerText {
+  text-align: center;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
+section.formSection {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 10px;
+  padding: 10px;
+}
+
+section.formSection h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+div.inputOption {
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  padding: 10px;
+  flex-direction: column;
+}
+
+img.map,
+img.blogging,
+img.team {
+  width: 100%;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.areYouLostContact {
+  display: flex;
+  justify-content: center;
 }
