@@ -48,6 +48,7 @@ header p {
 i.fa-bars {
   padding-right: 5px;
   font-size: 20px;
+  cursor: pointer;
 }
 
 nav {
@@ -55,8 +56,10 @@ nav {
   top: 0;
   bottom: 0;
   left: 50vw;
-  background-color: white;
+  background-color: blue;
   padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .centerText {

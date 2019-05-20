@@ -13,11 +13,19 @@ const toggleHamburgerMenu = () => {
 const _submitForm = () => {
   let firstName = document.querySelector('#firstName').value
   let lastName = document.querySelector('#lastName').value
+  let company = document.querySelector('#company').value
+  let phoneNumber = document.querySelector('#phoneNumber').value
+  let email = document.querySelector('#email').value
+  let reasonOfContact = document.querySelector('#reasonOfContact').value
 
   //created single form object
   let form = {
     firstName: firstName,
-    lastName: lastName
+    lastName: lastName,
+    company: company,
+    phoneNumber: phoneNumber,
+    email: email,
+    reasonOfContact: reasonOfContact
   }
 
   console.log(form)
@@ -56,7 +64,7 @@ const _dropDown = (bool, element) => {
 const _submitSearch = () => {
   let search = document.querySelector('#searchInput').value
   // window.location(`/search/${search}`)
-  //how to navigate it JS
+  //how to navigate in JS
   console.log(search)
 }
 
