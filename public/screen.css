@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,6 +11,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  font-family: 'Nunito', sans-serif;
 }
 
 .hide {
@@ -27,10 +30,12 @@ p {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 ul {
-  padding: 0 0 0 20px;
+  padding: 0 0 0 30px;
+  margin: 0px;
 }
 
 li {
@@ -43,14 +48,14 @@ header {
   align-items: center;
 }
 
-header p {
-  padding-left: 5px;
+p.logo {
+  padding: 10px 0 0 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 i.fa-bars {
-  padding-right: 5px;
+  padding: 10px 10px 0 0;
   font-size: 20px;
   cursor: pointer;
 }
@@ -60,10 +65,20 @@ nav {
   top: 0;
   bottom: 0;
   left: 50vw;
+  color: black;
   background-color: white;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+a.navOption {
+  color: #4699cd;
+  padding: 10px;
+}
+
+p.navOption {
+  padding-left: 5px;
 }
 
 .centerText {
@@ -109,6 +124,19 @@ img.team {
   border-radius: 5px;
 }
 
+button.submit {
+  margin: 5px 0 10px 0;
+  padding: 5px;
+  width: 100px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  background-color: #4699cd;
+  border-color: #4699cd;
+  border-radius: 5px;
+}
+
 .textAlignRight {
   text-align: right;
 }
@@ -120,4 +148,9 @@ h4 {
 .areYouLostContact {
   display: flex;
   justify-content: center;
+}
+
+.socialMediaContact {
+  padding: 15px;
+  font-size: 20px;
 }
