@@ -91,6 +91,10 @@ p.navOption {
   display: flex;
 }
 
+.contactUsSection {
+  margin: 30px;
+}
+
 section.formSection {
   display: flex;
   flex-direction: column;
@@ -112,6 +116,10 @@ div.inputOption {
 .container {
   padding: 10px;
   flex-direction: column;
+}
+
+.getInTouchSection {
+  margin-bottom: 30px;
 }
 
 img.map,
@@ -141,6 +149,11 @@ button.submit {
 
 .textAlignRight {
   text-align: right;
+}
+
+.bloggingSection,
+.teamSection {
+  margin-bottom: 30px;
 }
 
 .areYouLostContact {
