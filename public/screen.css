@@ -196,6 +196,11 @@ button.submit {
   border-radius: 5px;
 }
 
+.getInTouchSection {
+  padding: 10px;
+  flex-direction: column;
+}
+
 .getInTouch {
   margin: 20px 0 15px 0;
 }
@@ -218,6 +223,10 @@ button.submit {
 .bloggingSection p,
 .teamSection p {
   padding: 10px;
+}
+
+.desktopFooter {
+  display: none;
 }
 
 .footer p {
@@ -268,70 +277,53 @@ img.footerLogo {
     margin: 100px 80px 25px 80px;
   }
 
+  .container {
+    margin: 25px 0 100px 0;
+    padding: 0;
+  }
+
   img.map {
     width: 80vw;
     margin: 20px 80px;
   }
 
-  img.blogging,
-  img.team {
-    width: 100%;
-    border-radius: 5px;
+  .desktopContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 
-  button.submit {
-    margin: 5px 0 10px 0;
-    padding: 5px;
-    width: 100px;
+  img.blogging,
+  img.team {
+    width: 25rem;
   }
 
   .getInTouch {
     margin: 10px 250px;
   }
 
-  .getInTouch p {
-    padding: 5px;
+  .desktopFooter {
+    display: initial;
   }
 
-  .textAlignRight {
-    text-align: right;
+  .mobileFooter {
+    display: none;
   }
 
-  .bloggingSection,
-  .teamSection {
-    margin-bottom: 25px;
-  }
-
-  .bloggingSection p,
-  .teamSection p {
-    padding: 10px;
-  }
-
-  .footer p {
-    padding: 5px;
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
   }
 
   .servicesSection,
   .companySection,
   .resourcesSection {
-    padding: 10px;
+    padding: 0;
   }
 
   .areYouLostSection {
-    padding-top: 20px;
-  }
-
-  .areYouLostSection input {
-    margin: 10px 0;
-  }
-
-  .areYouLostContact {
-    display: flex;
-    justify-content: center;
-  }
-
-  .socialMediaContact {
-    padding: 15px;
-    font-size: 20px;
+    padding-top: 0;
   }
 }
