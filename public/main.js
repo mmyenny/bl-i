@@ -89,7 +89,6 @@ const _dropDown = (bool, element) => {
 const _submitSearch = () => {
   let search = document.querySelector('#searchInput').value
   // window.location(`/search/${search}`)
-  //how to navigate in JS
   console.log(search)
 }
 

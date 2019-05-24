@@ -79,6 +79,13 @@ p.navOption {
   padding-left: 5px;
 }
 
+img.backgroundWave {
+  width: 100vw;
+  height: 20rem;
+  position: absolute;
+  z-index: -1;
+}
+
 .centerText {
   text-align: center;
 }
@@ -93,7 +100,7 @@ p.navOption {
 }
 
 .contactUsSection {
-  margin: 30px;
+  padding: 15px 0 30px 0;
 }
 
 section.formSection {
@@ -103,6 +110,7 @@ section.formSection {
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
+  background-color: white;
 }
 
 section.formSection h2 {
@@ -113,7 +121,21 @@ section.formSection h2 {
 div.inputOption {
   display: flex;
   justify-content: space-between;
+  margin: 5px;
 }
+
+i.fa-check-square {
+  font-size: 35px;
+  color: #4699cd;
+  padding: 10px;
+}
+
+.toast {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
 .container {
   padding: 10px;
   flex-direction: column;

@@ -99,12 +99,14 @@
           <div class="inputOption">
             <label>Reason of Contact:</label>
             <select id="reasonOfContact">
-              <option>Your Services</option>
-              <option>Applying for a Job</option>
-              <option>Writing for Bluleadz</option>
+              <option>Automation Setup</option>
+              <option>Knowledge and Support Content</option>
+              <option>Conversations Dashboard</option>
               <option>Other</option>
             </select>
-            <button id="continue">Continue</button>
+          </div>
+          <div class="centering">
+            <button id="continue" class="submit">Continue</button>
           </div>
         </div>
         <div class="formSectionTwo hide" id="sectionTwo">
@@ -128,7 +130,11 @@
             <button id="submitForm" class="submit">Submit</button>
           </div>
         </div>
-      <p id="toast" class="hide">Thank you</p>
+      <div id="toast" class="hide centerText">
+        <i class="far fa-check-square"></i>
+        <p class="toast">Thank you!</p>
+        <p>Your submission has been recieved.</p>
+      </div>
       </div>
     </section>
 
@@ -263,6 +269,7 @@
         </a>
       </div>
     </section>
+    <img class="backgroundWave" src="./assets/background.png" alt="Background wave"/>
     <script src="/main.js" charset="UTF-8"></script>
   </body>
 </html>
