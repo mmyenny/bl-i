@@ -262,19 +262,9 @@ img.footerLogo {
   padding-top: 20px;
 }
 
-@media (min-width: 900px) {
-  i.fa-bars {
-    display: none;
-  }
-
-  .desktopNav {
-    display: flex;
-    flex-grow: 2;
-    justify-content: space-around;
-  }
-
+@media (min-width: 600px) {
   section.formSection {
-    margin: 100px 80px 25px 80px;
+    margin: 100px 100px 25px 100px;
   }
 
   .container {
@@ -284,7 +274,10 @@ img.footerLogo {
 
   img.map {
     width: 80vw;
-    margin: 20px 80px;
+  }
+
+  .getInTouchSection a {
+    text-align: center;
   }
 
   .desktopContainer {
@@ -295,11 +288,11 @@ img.footerLogo {
 
   img.blogging,
   img.team {
-    width: 25rem;
+    width: 18rem;
   }
 
   .getInTouch {
-    margin: 10px 250px;
+    margin: 10px 80px;
   }
 
   .desktopFooter {
@@ -317,13 +310,34 @@ img.footerLogo {
     margin: 0;
   }
 
-  .servicesSection,
-  .companySection,
-  .resourcesSection {
-    padding: 0;
-  }
-
   .areYouLostSection {
     padding-top: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  i.fa-bars {
+    display: none;
+  }
+
+  .desktopNav {
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-around;
+  }
+
+  .formSection label,
+  .formSection input,
+  .formSection select {
+    margin: 0 80px;
+  }
+
+  img.blogging,
+  img.team {
+    width: 25rem;
+  }
+
+  .getInTouch {
+    margin: 10px 250px;
   }
 }
