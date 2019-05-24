@@ -15,7 +15,7 @@
       </a>
       <i id="hamburgerMenuIcon" class="fas fa-bars"></i>
       <nav id="hamburgerMenu" class="hide">
-        <div id="closeHamburgerMenu"  class="row">
+        <div id="closeHamburgerMenu"  class="row closeHamburgerMenu">
           <i class="fas fa-times hide"></i>
           <p class="navOption">Close</p>
         </div>
@@ -83,6 +83,7 @@
       </nav>
     </header>
 
+    <img class="backgroundWave" src="./assets/background.png" alt="Background wave"/>
     <div class="contactUsSection">
       <h1 class="centerText">Contact Us</h1>
       <p class="centerText">With All Your Inbound Needs</p>
@@ -94,7 +95,7 @@
         <div class="formSectionOne" id="sectionOne">
           <div class="inputOption">
             <label>Company Name:</label>
-            <input id="company" placeholder="Company Name" type="text"></input>
+            <input id="company" class="companyInput" placeholder="Company Name" type="text"></input>
           </div>
           <div class="inputOption">
             <label>Reason of Contact:</label>
@@ -106,7 +107,7 @@
             </select>
           </div>
           <div class="centering">
-            <button id="continue" class="submit">Continue</button>
+            <button id="continue" class="continue">Continue</button>
           </div>
         </div>
         <div class="formSectionTwo hide" id="sectionTwo">
@@ -138,22 +139,22 @@
       </div>
     </section>
 
-    <section class="centering container">
+    <section class="centering container getInTouchSection">
       <a href="https://www.google.com/maps?ll=27.968553,-82.568787&z=9&t=m&hl=en-US&gl=US&mapclient=embed&cid=12379408056091796823" target="_blank">
         <img class="map" src="./assets/map.png" alt="Map"/>
       </a>
-      <div class="getInTouchSection">
-        <h2 class="centerText getInTouch">Get in Touch</h2>
+      <div class="getInTouch">
+        <h2 class="centerText">Get in Touch</h2>
         <div class="inputOption">
-          <h5>Office:</h5>
+          <h3>Office:</h3>
           <p class="textAlignRight">3030 N. Rocky Point Dr. W. <br/> Suite 600 <br/> Tampa, Florida 33607</p>
         </div>
         <div class="inputOption">
-          <h5>Phone:</h5>
+          <h3>Phone:</h3>
           <p class="textAlignRight">(866) 995-8720</p>
         </div>
         <div class="inputOption">
-          <h5>Email:</h5>
+          <h3>Email:</h3>
           <p class="textAlignRight">info@bluleadz.com</p>
         </div>
       </div>
@@ -180,9 +181,9 @@
       </div>
     </section>
 
-    <section class="centerText">
-      <div>
-        <h4>SERVICES</h4>
+    <section class="container centerText footer">
+      <div class="servicesSection">
+        <h3>SERVICES</h3>
         <i id="dropDownOneIcon" class="fas fa-angle-double-down"></i>
         <div id="dropDownOne" class="hide">
           <a href="#" target="_blank">
@@ -199,8 +200,8 @@
           </a>
         </div>
       </div>
-      <div>
-        <h4>COMPANY</h4>
+      <div class="companySection">
+        <h3>COMPANY</h3>
         <i id="dropDownTwoIcon" class="fas fa-angle-double-down"></i>
         <div id="dropDownTwo" class="hide">
           <a href="#" target="_blank">
@@ -217,8 +218,8 @@
           </a>
         </div>
       </div>
-      <div>
-        <h4>RESOURCES</h4>
+      <div class="resourcesSection">
+        <h3>RESOURCES</h3>
         <i id="dropDownThreeIcon" class="fas fa-angle-double-down"></i>
         <div id="dropDownThree" class="hide">
           <a href="#" target="_blank">
@@ -232,44 +233,43 @@
           </a>
         </div>
       </div>
+      <div class="areYouLostSection">
+        <h3>ARE YOU LOST?</h3>
+        <input id="searchInput" placeholder="Search" type="text"/>
+        <button id="search">
+          <i class="fas fa-search"></i>
+        </button>
+        <div class="areYouLostContact"> 
+          <i class="fas fa-phone"></i>
+          <p>	(866) 995-8720</p>
+        </div>
+        <div class="areYouLostContact"> 
+          <i class="fas fa-map-pin"></i>
+          <p>	3030 N. Rocky Point Dr. W. <br/> Suite 600 <br/> Tampa, Florida 33607</p>
+        </div>
+        <div class="socialMediaContact">
+          <a href="#" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-youtube-square"></i>
+          </a>
+          <a href="#" target="_blank">
+            <i class="fab fa-facebook-messenger"></i>
+          </a>
+        </div>
+      </div>
     </section>
-
-    <section class="container centerText">
-      <h4>ARE YOU LOST?</h4>
-      <input id="searchInput" placeholder="Search" type="text"/>
-      <button id="search">
-        <i class="fas fa-search"></i>
-      </button>
-      <div class="areYouLostContact"> 
-        <i class="fas fa-phone"></i>
-        <p>	(866) 995-8720</p>
-      </div>
-      <div class="areYouLostContact"> 
-        <i class="fas fa-map-pin"></i>
-        <p>	3030 N. Rocky Point Dr. W. <br/> Suite 600 <br/> Tampa, Florida 33607</p>
-      </div>
-      <div class="socialMediaContact">
-        <a href="#" target="_blank">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-twitter-square"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-youtube-square"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fab fa-facebook-messenger"></i>
-        </a>
-      </div>
-    </section>
-    <img class="backgroundWave" src="./assets/background.png" alt="Background wave"/>
+    <img class="footerLogo" src="./assets/logo.png" alt="Logo"/>
     <script src="/main.js" charset="UTF-8"></script>
   </body>
 </html>
