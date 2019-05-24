@@ -3,6 +3,13 @@ let dropDownOne = false
 let dropDownTwo = false
 let dropDownThree = false
 
+let firstName = ''
+let lastName = ''
+let company = ''
+let phoneNumber = ''
+let email = ''
+let reasonOfContact = ''
+
 const toggleHamburgerMenu = () => {
   hamburgerMenu = !hamburgerMenu
   let element = document.querySelector('#hamburgerMenu')
@@ -10,14 +17,32 @@ const toggleHamburgerMenu = () => {
   _dropDown(hamburgerMenu, element)
 }
 
-const _submitForm = () => {
-  let firstName = document.querySelector('#firstName').value
-  let lastName = document.querySelector('#lastName').value
-  let company = document.querySelector('#company').value
-  let phoneNumber = document.querySelector('#phoneNumber').value
-  let email = document.querySelector('#email').value
-  let reasonOfContact = document.querySelector('#reasonOfContact').value
+const _formSectionOne = () => {
+  company = document.querySelector('#company').value
+  reasonOfContact = document.querySelector('#reasonOfContact').value
 
+  let sectionOne = document.querySelector('#sectionOne')
+  let sectionTwo = document.querySelector('#sectionTwo')
+
+  _dropDown(false, sectionOne)
+  _dropDown(true, sectionTwo)
+}
+
+const _formSectionTwo = () => {
+  firstName = document.querySelector('#firstName').value
+  lastName = document.querySelector('#lastName').value
+  phoneNumber = document.querySelector('#phoneNumber').value
+  email = document.querySelector('#email').value
+
+  let element = document.querySelector('#toast')
+  let sectionTwo = document.querySelector('#sectionTwo')
+
+  submitForm()
+  _dropDown(false, sectionTwo)
+  _dropDown(true, element)
+}
+
+const submitForm = () => {
   //created single form object
   let form = {
     firstName: firstName,
@@ -84,7 +109,10 @@ const main = () => {
   document
     .querySelector('#closeHamburgerMenu')
     .addEventListener('click', toggleHamburgerMenu)
-  document.querySelector('#submitForm').addEventListener('click', _submitForm)
+  document.querySelector('#continue').addEventListener('click', _formSectionOne)
+  document
+    .querySelector('#submitForm')
+    .addEventListener('click', _formSectionTwo)
   document.querySelector('#search').addEventListener('click', _submitSearch)
 }
 

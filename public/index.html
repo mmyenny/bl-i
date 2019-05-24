@@ -91,38 +91,44 @@
     <section class="formSection">
       <h2>Get in Touch to See How We Can Help You Grow</h2>
       <div>
-        <div class="inputOption">
-          <label>First Name:</label>
-          <input id="firstName" placeholder="First Name" type="text"></input>
+        <div class="formSectionOne" id="sectionOne">
+          <div class="inputOption">
+            <label>Company Name:</label>
+            <input id="company" placeholder="Company Name" type="text"></input>
+          </div>
+          <div class="inputOption">
+            <label>Reason of Contact:</label>
+            <select id="reasonOfContact">
+              <option>Your Services</option>
+              <option>Applying for a Job</option>
+              <option>Writing for Bluleadz</option>
+              <option>Other</option>
+            </select>
+            <button id="continue">Continue</button>
+          </div>
         </div>
-        <div class="inputOption">
-          <label>Last Name:</label>
-          <input id="lastName" placeholder="Last Name" type="text"></input>
+        <div class="formSectionTwo hide" id="sectionTwo">
+          <div class="inputOption">
+            <label>First Name:</label>
+            <input id="firstName" placeholder="First Name" type="text"></input>
+          </div>
+          <div class="inputOption">
+            <label>Last Name:</label>
+            <input id="lastName" placeholder="Last Name" type="text"></input>
+          </div>
+          <div class="inputOption">
+            <label>Phone Number:</label>
+            <input id="phoneNumber" placeholder="xxx-xxx-xxxx" type="text"></input>
+          </div>
+          <div class="inputOption">
+            <label>Email:</label>
+            <input id="email" placeholder="Email" type="text"></input>
+          </div>
+          <div class="centering">
+            <button id="submitForm" class="submit">Submit</button>
+          </div>
         </div>
-        <div class="inputOption">
-          <label>Company Name:</label>
-          <input id="company" placeholder="Company Name" type="text"></input>
-        </div>
-        <div class="inputOption">
-          <label>Phone Number:</label>
-          <input id="phoneNumber" placeholder="xxx-xxx-xxxx" type="text"></input>
-        </div>
-        <div class="inputOption">
-          <label>Email:</label>
-          <input id="email" placeholder="Email" type="text"></input>
-        </div>
-        <div class="inputOption">
-          <label>Reason of Contact:</label>
-          <select id="reasonOfContact">
-            <option>Your Services</option>
-            <option>Applying for a Job</option>
-            <option>Writing for Bluleadz</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="centering">
-          <button id="submitForm" class="submit">Submit</button>
-        </div>
+      <p id="toast" class="hide">Thank you</p>
       </div>
     </section>
 
